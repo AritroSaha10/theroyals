@@ -12,7 +12,7 @@ export default function Home() {
       <header className="h-screen relative">
         {/* Background image using Next.js Image, taken from here: https://github.com/vercel/next.js/discussions/18357#discussioncomment-132523 */}
         <video autoPlay muted loop className="min-w-full min-h-full absolute">
-          <source src="/vex-change-up.mp4" type="video/mp4" />
+          <source src="/VEXFrontPage.mp4" type="video/mp4" />
         </video>
 
         <div className="relative z-1 h-screen bg-opacity-60 bg-black flex items-center justify-center">
