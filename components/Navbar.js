@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-import Logo from "../public/images/logo.png";
+import Logo from "../public/images/icon.png";
 
 import { GoThreeBars } from "react-icons/go"
 
@@ -37,12 +37,12 @@ export default function Navbar() {
     const [showDropdown, setShowDropdown] = useState(false);
 
     return (
-        <header className="bg-purple-200 py-2 lg:py-4">
+        <header className="bg-gray-50 py-2 lg:py-4">
             <div className="container px-4 mx-auto lg:flex lg:items-center">
                 <div className="flex justify-between items-center">
                     <Link href="/">
                         <a className="font-bold text-xl">
-                            <Image src={Logo} alt="logo" width={150} height={50} objectFit="contain" objectPosition="center" />
+                            <Image src={Logo} alt="logo" width={75} height={75} objectFit="contain" objectPosition="center" />
                         </a>
                     </Link>
 
