@@ -27,7 +27,7 @@ const links = [
     },
     {
         name: "Join Us",
-        link: "https://docs.google.com/forms/d/e/1FAIpQLSeb-nPbnwnaFELn7ljgLFHK_VGCkp0Io8SqSTvKZLixINd_iA/viewform",
+        link: "/join-us",
         id: "call-to-action",
         priority: true
     },
@@ -47,7 +47,7 @@ export default function Navbar() {
                     </Link>
 
                     <button
-                        className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                        className="border border-solid border-g ray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
                         aria-label="Menu"
                         data-test-id="navbar-menu"
                         onClick={

@@ -15,11 +15,11 @@ export default function Home() {
         <div className="h-full relative z-1 h-screen bg-opacity-60 bg-black flex items-center justify-center">
           <div className="mx-2 text-center">
             <h1 className="text-gray-500 font-bold text-4xl xs:text-5xl md:text-6xl">
-              <span className="text-white">John Fraser VEX Robotics</span>
+              <span className="text-white">The Royals - 82050</span>
             </h1>
 
             <h2 className="text-gray-500 font-semibold text-2xl xs:text-3xl md:text-4xl mt-4">
-              <span className="text-gray-300">We are 82050A and 82050B, John Fraser's VEX Robotics teams.</span>
+              <span className="text-gray-300">We are The Royals, John Fraser's VEX Robotics team.</span>
             </h2>
 
             <div className="mt-6">
