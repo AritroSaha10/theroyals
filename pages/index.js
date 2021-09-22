@@ -11,11 +11,11 @@ export default function Home() {
     <Layout name="Home">
       <header className="h-screen relative">
         {/* Background image using Next.js Image, taken from here: https://github.com/vercel/next.js/discussions/18357#discussioncomment-132523 */}
-        <video autoPlay muted loop className="min-w-full min-h-full absolute">
+        <video autoPlay muted loop className="min-h-full min-w-full object-cover overflow-hidden absolute">
           <source src="/VEXFrontPage.mp4" type="video/mp4" />
         </video>
 
-        <div className="relative z-1 h-screen bg-opacity-60 bg-black flex items-center justify-center">
+        <div className="h-full relative z-1 h-screen bg-opacity-60 bg-black flex items-center justify-center">
           <div className="mx-2 text-center">
             <h1 className="text-gray-500 font-bold text-4xl xs:text-5xl md:text-6xl">
               <span className="text-white">John Fraser VEX Robotics</span>
