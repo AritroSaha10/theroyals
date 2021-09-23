@@ -14,15 +14,21 @@ const links = [
         priority: false
     },
     {
-        name: "Information",
-        link: "/information",
-        id: "information",
-        priority: false
-    },
-    {
         name: "About Us",
         link: "/about",
         id: "about",
+        priority: false
+    },
+    {
+        name: "Team",
+        link: "/team",
+        id: "team",
+        priority: false
+    },
+    {
+        name: "Resources",
+        link: "/resources",
+        id: "resources",
         priority: false
     },
     {
