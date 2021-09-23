@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="h-80 relative">
+      <footer className="h-96 relative">
         {/* Background image using Next.js Image, taken from here: https://github.com/vercel/next.js/discussions/18357#discussioncomment-132523 */}
         <Image
           layout="fill"
