@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import Showcase from "../public/images/vex-showcase.jpg"
 import Interested from "../public/images/teamspraypaint.jpg"
+import HeroVideoPlaceholder from "../public/images/hero-video-placeholder.png"
 
 import { FaHammer, FaCode, FaChessPawn, FaShareAlt } from "react-icons/fa";
 import { useEffect, useRef } from 'react'
@@ -19,7 +20,7 @@ export default function Home() {
     <Layout name="Home">
       <header className="h-screen relative">
         {/* Background image using Next.js Image, taken from here: https://github.com/vercel/next.js/discussions/18357#discussioncomment-132523 */}
-        <video muted loop preload="none" className="h-screen min-w-full object-cover overflow-hidden absolute" ref={vidRef}>
+        <video muted loop preload="none" poster={HeroVideoPlaceholder.src} className="h-screen min-w-full object-cover overflow-hidden absolute" ref={vidRef}>
           <source src="/VEXFrontPage.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
