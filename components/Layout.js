@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 export default function Layout({ name, children }) {
     return (
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Head>
                 <title>{name} | JFSS Royals</title>
                 <meta name="description" content="The website representing the John Fraser Secondary School VEX Team: The Royals 82050." />
@@ -26,7 +26,7 @@ export default function Layout({ name, children }) {
 
             <Navbar />
 
-            <div>
+            <div className="flex-grow">
                 {children}
             </div>
 
