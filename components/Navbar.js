@@ -20,6 +20,12 @@ const links = [
         priority: false
     },
     {
+        name: "Timeline",
+        link: "/timeline",
+        id: "timeline",
+        priority: false,
+    },
+    {
         name: "Team",
         link: "/team",
         id: "team",
