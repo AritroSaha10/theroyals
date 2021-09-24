@@ -31,12 +31,14 @@ const links = [
         id: "team",
         priority: false
     },
+    /*
     {
         name: "Resources",
         link: "/resources",
         id: "resources",
         priority: false
     },
+    */
     {
         name: "Join Us",
         link: "/join-us",
