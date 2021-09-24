@@ -3,7 +3,6 @@ backend:
   repo: AritroSaha10/theroyals
   branch: main # Branch to update (optional; defaults to master)
   base_url: "https://theroyals.vercel.app"
-  site_domain: https://theroyals.vercel.app
   auth_endpoint: "api/auth" 
 
 media_folder: public/uploaded-content
