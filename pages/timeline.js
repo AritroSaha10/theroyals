@@ -63,7 +63,7 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">
-                    <Image src={ITZ} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" />
+                    <Image src={ITZ} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
                 </div>
             </div>
 
@@ -96,7 +96,7 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 mr-4 xl:w-1/3">
-                    <Image src={TP} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" />
+                    <Image src={TP} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
                 </div>
             </div>
 
@@ -133,7 +133,7 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">
-                    <Image src={TT} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" />
+                    <Image src={TT} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
                 </div>
             </div>
 
@@ -168,7 +168,7 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 mr-4 xl:w-1/3">
-                    <Image src={CU} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" />
+                    <Image src={CU} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
                 </div>
             </div>
 
@@ -197,7 +197,7 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">
-                    <Image src={ClubFairBoard} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" />
+                    <Image src={ClubFairBoard} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
                 </div>
             </div>
         </Layout>
