@@ -27,7 +27,7 @@ export async function getStaticProps(context) {
         let memberInfoFinal = {
             ...attributes,
             id: fname,
-            description: DOMPurify.sanitize(marked(attributes.description), {ALLOWED_TAGS: []})
+            description: DOMPurify.sanitize(marked(attributes.description), { ALLOWED_TAGS: [] })
         };
 
         memberInfoFinal.description = memberInfoFinal.description.length > DESCRIPTION_MAX_CHAR ? memberInfoFinal.description.slice(0, DESCRIPTION_MAX_CHAR) + "..." : memberInfoFinal.description;
@@ -44,7 +44,8 @@ export async function getStaticProps(context) {
 
 export default function Timeline({ allMemberInfo }) {
     const membersTeamA = allMemberInfo.filter(({ team }) => team === "Team A");
-    const membersTeamB = allMemberInfo.filter(({ team }) => team === "Team A");
+    const membersTeamB = allMemberInfo.filter(({ team }) => team === "Team B");
+
     return (
         <Layout name="Timeline">
             <header className="h-44 relative">
@@ -65,32 +66,66 @@ export default function Timeline({ allMemberInfo }) {
                 </div>
             </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-10 py-10 lg:px-20 xl:px-60 gap-8">
-                {allMemberInfo.map(({ name, position, team, description, photo, id }, idx) => (
-                    <Link href={`/team/${id}`} key={id}>
-                        <a>
-                            <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
-                                <Image
-                                    src={photo}
-                                    width={500}
-                                    height={400}
-                                    alt="Portrait"
-                                    className="rounded-t-lg w-full"
-                                    objectFit="cover"
-                                    objectPosition="center"
-                                />
+            <div className="px-10 py-10 lg:px-20 xl:px-60">
+                <h1 className="text-3xl font-semibold mb-6">Team A (82050A)</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {membersTeamA.map(({ name, position, team, description, photo, id }, idx) => (
+                        <Link href={`/team/${id}`} key={id}>
+                            <a>
+                                <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
+                                    <Image
+                                        src={photo}
+                                        width={500}
+                                        height={400}
+                                        alt="Portrait"
+                                        className="rounded-t-lg w-full"
+                                        objectFit="cover"
+                                        objectPosition="center"
+                                    />
 
-                                <div className="p-4">
-                                    <h1 className="text-xl font-medium">{name}</h1>
-                                    <h2 className="text-gray-600 font-medium text-md">{position} {position && "| "}{team}</h2>
-                                    <div className="text-gray-400 text-sm font-medium mb-2" dangerouslySetInnerHTML={{ __html: description }} />
+                                    <div className="p-4">
+                                        <h1 className="text-xl font-medium">{name}</h1>
+                                        <h2 className="text-gray-600 font-medium text-md">{position} {position && "| "}{team}</h2>
+                                        <div className="text-gray-400 text-sm font-medium mb-2" dangerouslySetInnerHTML={{ __html: description }} />
 
-                                    <small className="text-xs text-gray-400">Click on the card to see more...</small>
+                                        <small className="text-xs text-gray-400">Click on the card to see more...</small>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </Link>
-                ))}
+                            </a>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+
+            <div className="px-10 py-10 lg:px-20 xl:px-60">
+                <h1 className="text-3xl font-semibold mb-6">Team B (82050B)</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {membersTeamB.map(({ name, position, team, description, photo, id }, idx) => (
+                        <Link href={`/team/${id}`} key={id}>
+                            <a>
+                                <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
+                                    <Image
+                                        src={photo}
+                                        width={500}
+                                        height={400}
+                                        alt="Portrait"
+                                        className="rounded-t-lg w-full"
+                                        objectFit="cover"
+                                        objectPosition="center"
+                                    />
+
+                                    <div className="p-4">
+                                        <h1 className="text-xl font-medium">{name}</h1>
+                                        <h2 className="text-gray-600 font-medium text-md">{position} {position && "| "}{team}</h2>
+                                        <div className="text-gray-400 text-sm font-medium mb-2" dangerouslySetInnerHTML={{ __html: description }} />
+
+                                        <small className="text-xs text-gray-400">Click on the card to see more...</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </Link>
+                    ))}
+                </div>
             </div>
         </Layout>
     )
