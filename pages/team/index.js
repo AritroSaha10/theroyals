@@ -43,6 +43,8 @@ export async function getStaticProps(context) {
 }
 
 export default function Timeline({ allMemberInfo }) {
+    const membersTeamA = allMemberInfo.filter(({ team }) => team === "Team A");
+    const membersTeamB = allMemberInfo.filter(({ team }) => team === "Team A");
     return (
         <Layout name="Timeline">
             <header className="h-44 relative">
