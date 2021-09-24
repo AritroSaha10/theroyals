@@ -42,12 +42,12 @@ export async function getStaticProps(context) {
     }
 }
 
-export default function Timeline({ allMemberInfo }) {
+export default function TeamPage({ allMemberInfo }) {
     const membersTeamA = allMemberInfo.filter(({ team }) => team === "Team A");
     const membersTeamB = allMemberInfo.filter(({ team }) => team === "Team B");
 
     return (
-        <Layout name="Timeline">
+        <Layout name="Team">
             <header className="h-44 relative">
                 {/* Background image using Next.js Image, taken from here: https://github.com/vercel/next.js/discussions/18357#discussioncomment-132523 */}
                 <Image

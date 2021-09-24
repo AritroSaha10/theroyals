@@ -40,7 +40,7 @@ export async function getStaticProps(context) {
     }
 }
 
-export default function BoardMember({ memberInfo }) {
+export default function TeamMember({ memberInfo }) {
     return (
         <Layout name={memberInfo.name} noHeader>
             <header className="h-44 relative">
