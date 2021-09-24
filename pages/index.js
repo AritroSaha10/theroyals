@@ -25,7 +25,7 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="h-full relative z-1 h-screen bg-opacity-60 bg-black flex items-center justify-center">
+        <div className="relative z-1 h-screen bg-opacity-60 bg-black flex items-center justify-center">
           <div className="mx-2 text-center">
             <h1 className="text-gray-500 font-bold text-4xl xs:text-5xl md:text-6xl">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-400">The Royals - 82050</span>
