@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: AritroSaha10/theroyals
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: public/uploaded-content
+
+public_folder: /uploaded-content
+
+collections:
+  - name: "team-members" # Used in routes, e.g., /admin/collections/blog
+    identifier_field: "name"
+    label: "Team Members" # Used in the UI
+    label_singular: "Team Member"
+    folder: "content/team" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}-{{year}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string", required: false }
+      - {
+          label: "Team",
+          name: "team",
+          widget: "select",
+          options: ["Team A", "Team B"],
+          multiple: false,
+        }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Photo", name: "photo", widget: "image", required: true }

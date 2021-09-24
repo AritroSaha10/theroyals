@@ -22,6 +22,8 @@ export default function Layout({ name, children }) {
                 <meta property="twitter:title" content={`${name} | JFSS Royals`} />
                 <meta property="twitter:description" content="The website representing the John Fraser Secondary School VEX Team: The Royals 82050." />
                 <meta property="twitter:image:src" content="/images/logo-fill.png" />
+
+                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
 
             <Navbar />
