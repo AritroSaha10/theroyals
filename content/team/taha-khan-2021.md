@@ -8,5 +8,5 @@ description: >-
 
 
   [](mailto:jfssvex@gmail.com)[](https://www.instagram.com/jfss_royals/)[](https://github.com/jfssvex)
-photo: /uploaded-content/taha-khan.jpg
+photo: /uploaded-content/taha-khan-2.jpg
 ---
