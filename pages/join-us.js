@@ -65,6 +65,16 @@ export default function JoinUs() {
                     to be notified when we release them!
                 </p>
             </div>
+
+            <div className="text-center lg:text-left px-10 py-4 lg:px-20 xl:px-60">
+                <h1 className="text-3xl font-semibold mb-2">Experience</h1>
+
+                <p className="text-md text-gray-600 mb-2 align-middle">
+                    Contrary to popular belief, you do not need to have prior experience with 
+                    the competition to join the club. Many members join without any knowledge - 
+                    VEX is a great learning experience and we are all very welcoming!
+                </p>
+            </div>
         </Layout>
     )
 }
