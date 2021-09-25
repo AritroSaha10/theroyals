@@ -16,6 +16,9 @@ import CU from "../../public/images/timeline/2020-cu-2.png"
 import ClubFairBoard from "../../public/images/clubfair-board.png"
 import getFilesInDirectory from "../../util/getFilesInDirectory"
 
+import { motion } from "framer-motion"
+import transition from "../../components/Transitions";
+
 const DESCRIPTION_MAX_CHAR = 50;
 
 export async function getStaticProps(context) {
@@ -70,29 +73,50 @@ export default function TeamPage({ allMemberInfo }) {
                 <h1 className="text-3xl font-semibold mb-6">Team A (82050A)</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {membersTeamA.map(({ name, position, team, description, photo, id }, idx) => (
-                        <Link href={`/team/${id}`} key={id}>
-                            <a>
-                                <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
-                                    <Image
-                                        src={photo}
-                                        width={500}
-                                        height={400}
-                                        alt="Portrait"
-                                        className="rounded-t-lg w-full"
-                                        objectFit="cover"
-                                        objectPosition="center"
-                                    />
+                        <motion.div 
+                            layout
+                            initial={{
+                                opacity: 0,
+                                y: 60
+                            }}
+                            animate={{ 
+                                opacity: 1,
+                                y: 0
+                            }}
+                            transition={{
+                                ...transition,
+                                delay: idx * 0.2,
+                                duration: 0.4
+                            }}
+                        >
+                            <Link href={`/team/${id}`} key={id}>
+                                <a>
+                                    <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
+                                        <motion.figure
+                                            layoutId={`photo-${id}`}
+                                            animate={{
+                                                transition: { duration: 0.6, ...transition },
+                                            }}
+                                        >
+                                            <Image
+                                                src={photo}
+                                                width={500}
+                                                height={400}
+                                                alt="Portrait"
+                                                className="rounded-t-lg w-full"
+                                                objectFit="cover"
+                                                objectPosition="center"
+                                            />
+                                        </motion.figure>
 
-                                    <div className="p-4">
-                                        <h1 className="text-xl font-medium">{name}</h1>
-                                        <h2 className="text-gray-600 font-medium text-md">{position} {position && "| "}{team}</h2>
-                                        <div className="text-gray-400 text-sm font-medium mb-2" dangerouslySetInnerHTML={{ __html: description }} />
-
-                                        <small className="text-xs text-gray-400">Click on the card to see more...</small>
+                                        <div className="p-4">
+                                            <h1 className="text-xl font-medium">{name}</h1>
+                                            <h2 className="text-gray-600 font-medium text-md">{position} {position && "| "}{team}</h2>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </Link>
+                                </a>
+                            </Link>
+                        </motion.div>
                     ))}
                 </div>
             </div>
@@ -101,29 +125,50 @@ export default function TeamPage({ allMemberInfo }) {
                 <h1 className="text-3xl font-semibold mb-6">Team B (82050B)</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {membersTeamB.map(({ name, position, team, description, photo, id }, idx) => (
-                        <Link href={`/team/${id}`} key={id}>
-                            <a>
-                                <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
-                                    <Image
-                                        src={photo}
-                                        width={500}
-                                        height={400}
-                                        alt="Portrait"
-                                        className="rounded-t-lg w-full"
-                                        objectFit="cover"
-                                        objectPosition="center"
-                                    />
+                        <motion.div 
+                            layout
+                            initial={{
+                                opacity: 0,
+                                y: 60
+                            }}
+                            animate={{ 
+                                opacity: 1,
+                                y: 0
+                            }}
+                            transition={{
+                                ...transition,
+                                delay: (idx + membersTeamA.length) * 0.2,
+                                duration: 0.4,
+                            }}
+                        >
+                            <Link href={`/team/${id}`} key={id}>
+                                <a>
+                                    <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
+                                        <motion.figure
+                                            layoutId={`photo-${id}`}
+                                            animate={{
+                                                transition: { duration: 0.6, ...transition },
+                                            }}
+                                        >
+                                            <Image
+                                                src={photo}
+                                                width={500}
+                                                height={400}
+                                                alt="Portrait"
+                                                className="rounded-t-lg w-full"
+                                                objectFit="cover"
+                                                objectPosition="center"
+                                            />
+                                        </motion.figure>
 
-                                    <div className="p-4">
-                                        <h1 className="text-xl font-medium">{name}</h1>
-                                        <h2 className="text-gray-600 font-medium text-md">{position} {position && "| "}{team}</h2>
-                                        <div className="text-gray-400 text-sm font-medium mb-2" dangerouslySetInnerHTML={{ __html: description }} />
-
-                                        <small className="text-xs text-gray-400">Click on the card to see more...</small>
+                                        <div className="p-4">
+                                            <h1 className="text-xl font-medium">{name}</h1>
+                                            <h2 className="text-gray-600 font-medium text-md">{position} {position && "| "}{team}</h2>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </Link>
+                                </a>
+                            </Link>
+                        </motion.div>
                     ))}
                 </div>
             </div>
