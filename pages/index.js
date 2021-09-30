@@ -21,7 +21,7 @@ export default function Home() {
       <header className="h-screen relative bg-black">
         {/* Background image using Next.js Image, taken from here: https://github.com/vercel/next.js/discussions/18357#discussioncomment-132523 */}
         <video muted loop preload="none" poster={HeroVideoPlaceholder.src} className="h-screen min-w-full object-cover overflow-hidden absolute" ref={vidRef}>
-          <source src="/VEXFrontPage.mp4" type="video/mp4" />
+          <source src="/VEXFrontPage-Compressed.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
