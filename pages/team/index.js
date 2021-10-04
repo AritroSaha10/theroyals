@@ -88,6 +88,7 @@ export default function TeamPage({ allMemberInfo }) {
                                 delay: idx * 0.2,
                                 duration: 0.4
                             }}
+                            key={id}
                         >
                             <Link href={`/team/${id}`} key={id}>
                                 <a>
@@ -140,6 +141,7 @@ export default function TeamPage({ allMemberInfo }) {
                                 delay: (idx + membersTeamA.length) * 0.2,
                                 duration: 0.4,
                             }}
+                            key={id}
                         >
                             <Link href={`/team/${id}`} key={id}>
                                 <a>

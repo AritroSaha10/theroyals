@@ -2,6 +2,10 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
+import Link from "next/link";
+
+import { BiLink } from "react-icons/bi";
+
 export default function Layout({ name, children }) {
     return (
         <div className="flex flex-col min-h-screen">
@@ -27,6 +31,22 @@ export default function Layout({ name, children }) {
 
                 <meta name="google-site-verification" content="NxIS9WMkJ1Bwz7t8rlvApmZgRAJYV9qvjf0sWHdJBLM" />
             </Head>
+
+            {name !== "Join Us" &&
+                <div className="w-full p-4 md:px-8 bg-purple-700">
+                    <p className="text-white text-center">
+                        Applications are <b>open</b>! Find more information
+                        {" "}
+                        <Link href="/join-us">
+                            <a className="text-blue-300 hover:text-blue-100 duration-150">
+                                <BiLink className="inline mr-1" />
+                                here
+                            </a>
+                        </Link>
+                        .
+                    </p>
+                </div>
+            }
 
             <Navbar />
 
