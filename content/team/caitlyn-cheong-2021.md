@@ -7,5 +7,5 @@ description: Caitlyn is a Grade 11 student at John Fraser who is a member of the
   this year’s competition Tipping Point and working with the team to develop a
   robot. During her spare time, she enjoys doing a variety of arts and crafts,
   like baking, sewing, painting, and drawing.
-photo: /uploaded-content/placeholder-pfp.png
+photo: /uploaded-content/caitlyn.jpg
 ---
