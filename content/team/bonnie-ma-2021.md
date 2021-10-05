@@ -7,5 +7,5 @@ description: Bonnie is a Grade 12 programmer for John Fraser’s VEX Robotics
   help her team make a good robot for Tipping Point, seeking especially to learn
   more about creating a successful autonomous routine and elegant code for
   driver control. She enjoys playing video games and tennis.
-photo: /uploaded-content/placeholder-pfp.png
+photo: /uploaded-content/bonnie.jpg
 ---
