@@ -182,9 +182,9 @@ export default function Timeline() {
                     </p>
 
                     <p className="text-md text-gray-600 mb-6">
-                        However, with a sizable amount of grade 12 members leaving, that means that we're going to need more hardworking, dedicated individuals. That's why we're
+                        However, with a sizable amount of grade 12 members leaving, that means that we're going to need more hardworking, dedicated individuals. That's why
                         {" "}
-                        <b>planning on opening up applications soon</b>. Curious? Check out  
+                        <b>applications are open</b>! Curious? Check out  
                         {" "}
                         <Link href="/join-us">
                             <a className="text-blue-500 hover:text-blue-700 duration-150">
