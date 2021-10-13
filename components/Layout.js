@@ -32,6 +32,7 @@ export default function Layout({ name, children }) {
                 <meta name="google-site-verification" content="NxIS9WMkJ1Bwz7t8rlvApmZgRAJYV9qvjf0sWHdJBLM" />
             </Head>
 
+            {/*
             {name !== "Join Us" &&
                 <div className="w-full p-4 md:px-8 bg-purple-700">
                     <p className="text-white text-center">
@@ -47,6 +48,7 @@ export default function Layout({ name, children }) {
                     </p>
                 </div>
             }
+        */}
 
             <Navbar />
 

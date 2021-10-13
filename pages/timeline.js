@@ -181,6 +181,7 @@ export default function Timeline() {
                         and programmers preparing our strategies as well as producing code.
                     </p>
 
+                    {/*
                     <p className="text-md text-gray-600 mb-6">
                         However, with a sizable amount of grade 12 members leaving, that means that we're going to need more hardworking, dedicated individuals. That's why
                         {" "}
@@ -194,6 +195,7 @@ export default function Timeline() {
                         {" "}
                         for more information.
                     </p>
+                    */}
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">

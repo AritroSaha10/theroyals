@@ -35,31 +35,6 @@ export default function JoinUs() {
                 </p>
             </div>
             
-            <div className="text-center lg:text-left px-10 py-4 lg:px-20 xl:px-60">
-                <h1 className="text-3xl font-semibold mb-2">Applications (Open!)</h1>
-
-                <p className="text-md text-gray-600 mb-2 align-middle">
-                    As of now, applications are <b>open</b>! They are due by <b>Monday, October 11th, 2021 at 11:59PM</b>.
-                    Late applicants will not be considered.
-                </p>
-
-                <p className="text-md text-gray-600 mb-2 align-middle">                    
-                    You can check the applications out using this
-                    {" "}
-                    <Link href="https://forms.gle/fonrrF7YoDvFzLPX9">
-                        <a className="text-blue-500 hover:text-blue-700 duration-150" target="_blank" rel="noreferrer">
-                            <AiOutlineForm className="inline mr-1" />
-                            Google Form
-                        </a>
-                    </Link>
-                    {" "}
-                    link. Please note that you must use your personal account to access the form.
-                </p>
-
-                <p className="text-md text-gray-600 mb-2 align-middle">
-                    Good luck!
-                </p>
-            </div>
 
             <div className="text-center lg:text-left px-10 py-4 lg:px-20 xl:px-60">
                 <h1 className="text-3xl font-semibold mb-2">Why should you join?</h1>
@@ -82,6 +57,14 @@ export default function JoinUs() {
                     Contrary to popular belief, you do not need to have prior experience with 
                     the competition to join the club. Many members join without any knowledge - 
                     VEX is a great learning experience and we are all very welcoming!
+                </p>
+            </div>
+
+            <div className="text-center lg:text-left px-10 py-4 lg:px-20 xl:px-60">
+                <h1 className="text-3xl font-semibold mb-2">Applications (Closed)</h1>
+
+                <p className="text-md text-gray-600 mb-2 align-middle">
+                    As of now, applications are <b>closed</b>. They were due by Tuesday, October 12th, 2021.
                 </p>
             </div>
         </Layout>
