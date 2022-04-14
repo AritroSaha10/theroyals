@@ -14,7 +14,6 @@ export default function Home() {
   
   useEffect(() => {
     console.log(vidRef);
-    // vidRef.current.play();
   }, []);
 
   return (
