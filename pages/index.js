@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Showcase from "../public/images/vex-showcase.jpg"
+import Showcase from "../public/images/team-photos/tipping-point/everyone.jpg"
 import Interested from "../public/images/teamspraypaint.jpg"
 import HeroVideoPlaceholder from "../public/images/hero-video-placeholder.png"
 
