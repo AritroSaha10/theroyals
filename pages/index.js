@@ -70,7 +70,7 @@ export default function Home() {
           <h1 className="text-4xl text-black font-bold">Our Team Roles</h1>
         </div>
 
-        <div className="w-full lg:w-5/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 justify-between items-center text-center lg:text-left lg:items-start">
+        <div className="w-full xl:w-5/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-10 justify-between items-center text-center lg:text-left lg:items-start gap-4">
           <div className="flex flex-col p-4 gap-4 items-center lg:items-start">
             <div className="flex items-center justify-center text-2xl text-white bg-purple-500 w-12 h-12 rounded-lg">
               <FaHammer />
