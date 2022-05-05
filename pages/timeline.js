@@ -10,7 +10,7 @@ import TP from "../public/images/timeline/2018-tp.png"
 import TT from "../public/images/timeline/2019-tt.png"
 import CU from "../public/images/timeline/2020-cu-2.png"
 
-import ClubFairBoard from "../public/images/clubfair-board.png"
+import TiP from "../public/images/team-photos/tipping-point/everyone.jpg"
 
 export default function Timeline() {
     return (
@@ -177,8 +177,19 @@ export default function Timeline() {
                     <h1 className="text-3xl font-semibold mb-2">Tipping Point (2021 - 2022)</h1>
 
                     <p className="text-md text-gray-600 mb-2">
-                        Since the reveal of the season, we've been working dilligently on the robot, with engineers working on CAD models of the robot,
-                        and programmers preparing our strategies as well as producing code.
+                        As the COVID-19 pandemic started to ease, we were able to finally run both teams, as well as meet together and work on the robots! 
+                        We started work in early July, meeting up online and planning out strategies, doing CAD work, and placing the framework for our codebases.
+                    </p>
+
+                    <p className="text-md text-gray-600 mb-2">
+                        While we continued to work online for the summer, we were only able to start up regular meetings near the start of the school year. Here, both teams started
+                        to work on implementing their designs, experimenting, and testing. By the end of December, we had two robots from both teams, both ready to compete. 
+                    </p>
+
+                    <p className="text-md text-gray-600 mb-2">
+                        Unfortunately, due to a new wave of COVID-19 cases and other issues, we were unable to attend any competitions before provincials, leading our season to end.
+                        Despite the ending of our season, we were still active, teaching the general members for when they join the teams next year. As the new season approaches, we're
+                        excited to get started on new challenges.
                     </p>
 
                     {/*
@@ -199,7 +210,7 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">
-                    <Image src={ClubFairBoard} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
+                    <Image src={TiP} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
                 </div>
             </div>
         </Layout>
