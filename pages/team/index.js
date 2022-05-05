@@ -85,7 +85,7 @@ export default function TeamPage({ allMemberInfo }) {
                             }}
                             transition={{
                                 ...transition,
-                                delay: idx * 0.2,
+                                delay: idx * 0.1,
                                 duration: 0.4
                             }}
                             key={id}
@@ -93,6 +93,7 @@ export default function TeamPage({ allMemberInfo }) {
                             <Link href={`/team/${id}`} key={id}>
                                 <a>
                                     <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
+                                        {/*
                                         <motion.figure
                                             layoutId={`photo-${id}`}
                                             animate={{
@@ -109,6 +110,7 @@ export default function TeamPage({ allMemberInfo }) {
                                                 objectPosition="center"
                                             />
                                         </motion.figure>
+                                        */}
 
                                         <div className="p-4">
                                             <h1 className="text-xl font-medium">{name}</h1>
@@ -138,7 +140,7 @@ export default function TeamPage({ allMemberInfo }) {
                             }}
                             transition={{
                                 ...transition,
-                                delay: (idx + membersTeamA.length) * 0.2,
+                                delay: (idx + 2) * 0.1,
                                 duration: 0.4,
                             }}
                             key={id}
@@ -146,6 +148,7 @@ export default function TeamPage({ allMemberInfo }) {
                             <Link href={`/team/${id}`} key={id}>
                                 <a>
                                     <div className="flex flex-col shadow-md hover:shadow-xl transform hover:scale-105 duration-500 bg-white rounded-lg cursor-pointer">
+                                        {/*
                                         <motion.figure
                                             layoutId={`photo-${id}`}
                                             animate={{
@@ -162,6 +165,7 @@ export default function TeamPage({ allMemberInfo }) {
                                                 objectPosition="center"
                                             />
                                         </motion.figure>
+                                        */}
 
                                         <div className="p-4">
                                             <h1 className="text-xl font-medium">{name}</h1>

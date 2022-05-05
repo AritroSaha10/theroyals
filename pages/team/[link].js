@@ -70,6 +70,7 @@ export default function TeamMember({ memberInfo }) {
 
             <motion.div layout>
                 <div className="flex flex-col lg:flex-row px-10 py-2 lg:px-20 lg:py-4 xl:px-60 xl:py-10 items-center">
+                    {/*
                     <motion.figure
                         layoutId={`photo-${memberInfo.id}`}
                         animate={{
@@ -78,14 +79,15 @@ export default function TeamMember({ memberInfo }) {
                     >
                         <Image src={memberInfo.photo} className="w-1/5 rounded-md" alt="Person" height={500} width={400} objectPosition="center" objectFit="cover" />
                     </motion.figure>
+                    */}
 
-                    <div className="lg:ml-5 flex flex-col w-4/5 items-center lg:items-start">
+                    <div className="lg:ml-5 flex flex-col w-full items-center">
                         <h1 className="text-black text-4xl font-semibold text-center">{memberInfo.name}</h1>
                         <h3 className="text-gray-500 text-md text-center">{memberInfo.position} {memberInfo.position && "| "}{memberInfo.team}</h3>
 
                         <br />
 
-                        <div className="text-center lg:text-left" dangerouslySetInnerHTML={{ __html: memberInfo.description }} />
+                        <div className="text-center" dangerouslySetInnerHTML={{ __html: memberInfo.description }} />
                     </div>
                 </div>
             </motion.div>
