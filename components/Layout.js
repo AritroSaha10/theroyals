@@ -5,10 +5,34 @@ import Navbar from "./Navbar";
 import Link from "next/link";
 
 import { BiLink } from "react-icons/bi";
+import { useRouter } from "next/router";
+
+import { motion } from "framer-motion";
+
+const pageFadeIn = {
+    initial: {
+        opacity: 0
+    },
+    animate: {
+        opacity: 1
+    },
+    exit: {
+        opacity: 0
+    },
+    transition: {
+        duration: 0.4,
+        type: "tween"
+    }
+};
 
 export default function Layout({ name, children }) {
+    const router = useRouter()
+    const onHomePage = router.route == "/"
+
     return (
-        <div className="flex flex-col min-h-screen">
+        <div 
+            className="flex flex-col min-h-screen"
+        >
             <Head>
                 <title>{name} | JFSS Royals</title>
                 <meta name="description" content="The website representing the John Fraser Secondary School VEX Team: The Royals 82050." />
@@ -50,11 +74,18 @@ export default function Layout({ name, children }) {
             }
         */}
 
-            <Navbar />
+            {!onHomePage && <Navbar />}
 
-            <div className="flex-grow">
+            <motion.div 
+                className="flex-grow"
+                variants={pageFadeIn}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                transition="transition"
+            >
                 {children}
-            </div>
+            </motion.div>
 
             <Footer />
         </div>
