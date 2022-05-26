@@ -28,7 +28,7 @@ const bottomLineVariants = {
   },
   animate: {
     transition: {
-      delayChildren: 0.6,
+      delayChildren: 0.5,
       staggerChildren: 0.2,
     }
   }
@@ -36,7 +36,7 @@ const bottomLineVariants = {
 
 const characterVariants = {
   initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.6, ...transition }, }
+  animate: { opacity: 1, y: 0, transition: { duration: 0.3, ...transition }, }
 };
 
 const topLine = "Hey, we're the".split(' ');
@@ -98,7 +98,7 @@ export default function Home() {
 
       <Navbar homePage />
 
-      <div className="flex p-10 flex-col items-center md:flex-row lg:p-20 xl:p-40 items-left bg-purple-50">
+      <div className="flex p-10 flex-col items-center md:flex-row lg:p-20 xl:px-40 items-left bg-purple-50">
         <div className="flex-col w-4/5 text-center md:text-left mb-4 md:mb-0">
           <h1 className="text-black font-bold text-2xl xs:text-3xl md:text-4xl">Who We Are</h1>
           <p className="mt-4 w-full md:w-3/4 text-lg text-gray-600">

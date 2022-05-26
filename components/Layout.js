@@ -76,16 +76,9 @@ export default function Layout({ name, children }) {
 
             {!onHomePage && <Navbar />}
 
-            <motion.div 
-                className="flex-grow"
-                variants={pageFadeIn}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                transition="transition"
-            >
+            <div className="flex-grow">
                 {children}
-            </motion.div>
+            </div>
 
             <Footer />
         </div>

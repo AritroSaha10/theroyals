@@ -51,7 +51,7 @@ export default function Navbar({ homePage }) {
     const [showDropdown, setShowDropdown] = useState(false);
 
     return (
-        <header className={`bg-gray-50 py-2 ${!homePage && "lg:py-4"} sticky top-0`}>
+        <header className={`bg-gray-50 py-2 ${!homePage && "lg:py-4"} sticky top-0 drop-shadow-md`} style={{ zIndex: 9999999999 }}>
             <div className="container px-4 mx-auto lg:flex lg:items-center">
                 <div className="flex justify-between items-center">
                     <Link href="/">
