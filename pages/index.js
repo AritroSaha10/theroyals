@@ -53,7 +53,7 @@ export default function Home() {
     <Layout name="Home">
       <div className="flex h-screen bg-gradient-to-r from-violet-200 to-purple-300">
         <div className="w-1/2">
-          <video muted loop autoPlay poster={HeroVideoPlaceholder.src} className="h-full object-cover overflow-hidden" ref={vidRef}>
+          <video muted loop autoPlay poster={Showcase.src} className="h-full object-cover overflow-hidden" ref={vidRef}>
             <source src="/VEXFrontPage-H265.mp4" type="video/hevc" />
             <source src="/VEXFrontPage2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -64,11 +64,11 @@ export default function Home() {
           <div className="text-3xl md:text-4xl lg:text-5xl text-left">
             <div className="mb-4">
               <motion.div variants={topLineVariants} initial="initial" animate="animate" className="font-medium text-slate-700 flex gap-2">
-                {topLine.map(char => <motion.span className="inline-block relative" variants={characterVariants}>{char}</motion.span>)}
+                {topLine.map(char => <motion.span className="inline-block relative" variants={characterVariants} key={char}>{char}</motion.span>)}
               </motion.div>
 
               <motion.div variants={bottomLineVariants} initial="initial" animate="animate" className="font-bold flex gap-2">
-                {bottomLine.map(char => <motion.span className="inline-block relative bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-purple-500" variants={characterVariants}>{char}</motion.span>)}
+                {bottomLine.map(char => <motion.span className="inline-block relative bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-purple-500" variants={characterVariants} key={char}>{char}</motion.span>)}
               </motion.div>
             </div>
           </div>
@@ -77,12 +77,9 @@ export default function Home() {
             <p className="text-xl font-light">
               We're a <span className="text-red-500 font-medium">VEX Robotics team</span> from
               {" "}
-
-              {" "}
               <span className="text-emerald-700 font-medium">Mississauga</span>
               , working from our school of {" "}
               <span className="text-indigo-600 font-medium">John Fraser Secondary School</span>.
-
             </p>
           </div>
 
