@@ -41,7 +41,7 @@ export default function Layout({ name, children }) {
                 <meta property="og:title" content={`${name} | JFSS Royals`} />
                 <meta property="og:description" content="The website representing John Fraser's VEX Team: The Royals 82050." />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="/images/new-splash-2.jpg" />
+                <meta property="og:image" content="/images/new-splash-3.jpg" />
                 <meta property="og:image:type" content="image/png" />
                 <meta property="og:image:width" content="2800" />
                 <meta property="og:image:height" content="1800" />
