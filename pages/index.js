@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import Showcase from "../public/images/team-photos/tipping-point/everyone.jpg"
 import Interested from "../public/images/teamspraypaint.jpg"
-import HeroVideoPlaceholder from "../public/images/hero-video-placeholder.png"
+import HeroVideoPlaceholder from "../public/images/everyone-cropped.jpg"
 
 import { FaHammer, FaCode, FaChessPawn, FaShareAlt } from "react-icons/fa";
 import { useEffect, useRef } from 'react'
@@ -53,7 +53,7 @@ export default function Home() {
     <Layout name="Home">
       <div className="flex h-screen bg-gradient-to-r from-violet-200 to-purple-300">
         <div className="w-1/2">
-          <video muted loop autoPlay poster={Showcase.src} className="h-full object-cover overflow-hidden" ref={vidRef}>
+          <video muted loop autoPlay poster={HeroVideoPlaceholder.src} className="h-full object-cover overflow-hidden" ref={vidRef}>
             <source src="/VEXFrontPage-H265.mp4" type="video/hevc" />
             <source src="/VEXFrontPage2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
