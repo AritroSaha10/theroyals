@@ -86,7 +86,7 @@ export default function Home() {
           <div>
             <Link href="/join-us">
               <a className="py-2 px-4 bg-purple-500 rounded-lg font-semibold text-white hover:bg-purple-700 duration-150 text-md mt-4">
-                Join Today
+                Join Today →
               </a>
             </Link>
           </div>
