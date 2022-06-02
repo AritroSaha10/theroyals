@@ -53,7 +53,7 @@ export default function Home() {
     <Layout name="Home">
       <div className="flex flex-col h-screen bg-gradient-to-r from-violet-200 to-purple-300">
         <div className="w-full">
-          <video muted loop autoPlay poster={HeroVideoPlaceholder.src} className="h-screen object-cover overflow-hidden" ref={vidRef}>
+          <video muted loop autoPlay poster={Showcase.src} className="h-screen object-cover overflow-hidden" ref={vidRef}>
             <source src="/VEXFrontPage-H265.mp4" type="video/hevc" />
             <source src="/VEXFrontPage2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
