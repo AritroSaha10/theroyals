@@ -51,35 +51,35 @@ export default function Home() {
 
   return (
     <Layout name="Home">
-      <div className="flex flex-col sm:flex-row h-screen bg-gradient-to-r from-violet-200 to-purple-300">
-        <div className="w-full sm:w-1/2">
-          <video muted loop autoPlay poster={HeroVideoPlaceholder.src} className="h-screen sm:h-full  object-cover overflow-hidden" ref={vidRef}>
+      <div className="flex flex-col h-screen bg-gradient-to-r from-violet-200 to-purple-300">
+        <div className="w-full">
+          <video muted loop autoPlay poster={HeroVideoPlaceholder.src} className="h-screen object-cover overflow-hidden" ref={vidRef}>
             <source src="/VEXFrontPage-H265.mp4" type="video/hevc" />
             <source src="/VEXFrontPage2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-        <div className="absolute sm:static p-4 xs:p-8 sm:p-16 z-1 flex flex-col justify-center h-screen sm:h-full bg-black/70 sm:bg-transparent w-full sm:w-1/2">
-          <div className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl text-left">
+        <div className="absolute p-4 xs:p-8 sm:p-16 z-1 flex flex-col justify-center h-screen bg-black/70 w-full">
+          <div className="text-5xl lg:text-7xl text-left">
             <div className="mb-4">
-              <motion.div variants={topLineVariants} initial="initial" animate="animate" className="font-medium text-white sm:text-slate-700 flex flex-wrap gap-2">
+              <motion.div variants={topLineVariants} initial="initial" animate="animate" className="font-medium text-white flex flex-wrap gap-2">
                 {topLine.map(char => <motion.span className="inline-block relative" variants={characterVariants} key={char}>{char}</motion.span>)}
               </motion.div>
 
-              <motion.div variants={bottomLineVariants} initial="initial" animate="animate" className="font-bold flex flex-wrap sm:flex-nowrap gap-2">
+              <motion.div variants={bottomLineVariants} initial="initial" animate="animate" className="font-bold flex flex-wrap gap-2">
                 {bottomLine.map(char => <motion.span className="inline-block relative bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-purple-500" variants={characterVariants} key={char}>{char}</motion.span>)}
               </motion.div>
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 text-white sm:text-gray-700 mb-4">
+          <div className="flex flex-col gap-2 text-white mb-4 md:w-3/4 lg:w-1/2">
             <p className="text-xl font-light">
               We're a <span className="text-red-500 font-medium">VEX Robotics team</span> from
               {" "}
               <span className="text-emerald-700 font-medium">Mississauga</span>
               , working from our school of {" "}
-              <span className="text-indigo-400 sm:text-indigo-600 font-medium">John Fraser Secondary School</span>.
+              <span className="text-indigo-400 font-medium">John Fraser Secondary School</span>.
             </p>
           </div>
 
