@@ -21,7 +21,7 @@ export default function Timeline() {
                     layout="fill"
                     className="object-center object-cover pointer-events-none filter blur-sm"
                     src={TimelineImg}
-                    alt="Timeline"
+                    alt=""
                 />
 
                 <div className="flex items-center justify-center relative z-1 h-full bg-opacity-60 bg-black">
@@ -63,7 +63,17 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">
-                    <Image src={ITZ} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
+                    <Image 
+                        src={ITZ} 
+                        width={600} 
+                        height={400} 
+                        quality={90} 
+                        objectFit="cover" 
+                        objectPosition="center" 
+                        className="rounded-lg" 
+                        placeholder="blur" 
+                        alt="Robots playing on In the Zone field"
+                    />
                 </div>
             </div>
 
@@ -96,7 +106,17 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 mr-4 xl:w-1/3">
-                    <Image src={TP} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
+                    <Image 
+                        src={TP} 
+                        width={600} 
+                        height={400} 
+                        quality={90} 
+                        objectFit="cover" 
+                        objectPosition="center" 
+                        className="rounded-lg" 
+                        placeholder="blur" 
+                        alt="Team with robot during Tipping Point"
+                    />
                 </div>
             </div>
 
@@ -133,7 +153,17 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">
-                    <Image src={TT} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
+                    <Image 
+                        src={TT} 
+                        width={600} 
+                        height={400} 
+                        quality={90} 
+                        objectFit="cover" 
+                        objectPosition="center" 
+                        className="rounded-lg" 
+                        placeholder="blur"
+                        alt="Team with robot during Tower Takeover"
+                    />
                 </div>
             </div>
 
@@ -162,13 +192,23 @@ export default function Timeline() {
                     </p>
 
                     <p className="text-md text-gray-600 mb-6">
-                        Once again, this season had been our most successful yet, and has been an amazing experience for all of our team members. We've never been more eager to start
+                        Once again, this season had been our most successful yet, and has been an amazing experience for all of our team members. We&apos;ve never been more eager to start
                         yet another season.
                     </p>
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 mr-4 xl:w-1/3">
-                    <Image src={CU} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
+                    <Image 
+                        src={CU} 
+                        width={600} 
+                        height={400} 
+                        quality={90} 
+                        objectFit="cover" 
+                        objectPosition="center" 
+                        className="rounded-lg"
+                        placeholder="blur" 
+                        alt="Team with design award banner and robot during Change Up"
+                    />
                 </div>
             </div>
 
@@ -188,13 +228,13 @@ export default function Timeline() {
 
                     <p className="text-md text-gray-600 mb-2">
                         Unfortunately, due to a new wave of COVID-19 cases and other issues, we were unable to attend any competitions before provincials, leading our season to end.
-                        Despite the ending of our season, we were still active, teaching the general members for when they join the teams next year. As the new season approaches, we're
+                        Despite the ending of our season, we were still active, teaching the general members for when they join the teams next year. As the new season approaches, we&apos;re
                         excited to get started on new challenges.
                     </p>
 
                     {/*
                     <p className="text-md text-gray-600 mb-6">
-                        However, with a sizable amount of grade 12 members leaving, that means that we're going to need more hardworking, dedicated individuals. That's why
+                        However, with a sizable amount of grade 12 members leaving, that means that we're going to need more hardworking, dedicated individuals. That&apos;s why
                         {" "}
                         <b>applications are open</b>! Curious? Check out  
                         {" "}
@@ -210,7 +250,17 @@ export default function Timeline() {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-6 ml-4 xl:w-1/3">
-                    <Image src={TiP} width={600} height={400} quality={90} objectFit="cover" objectPosition="center" className="rounded-lg" placeholder="blur" />
+                    <Image 
+                        src={TiP} 
+                        width={600} 
+                        height={400} 
+                        quality={90} 
+                        objectFit="cover" 
+                        objectPosition="center" 
+                        className="rounded-lg" 
+                        placeholder="blur" 
+                        alt="Team A, Team B, and general members with both teams' robots during Tipping Point"
+                    />
                 </div>
             </div>
         </Layout>

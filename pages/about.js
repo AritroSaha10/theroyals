@@ -69,7 +69,7 @@ export default function AboutUs() {
                 <h1 className="text-3xl font-semibold mb-2">2021-2022 Season: Tipping Point</h1>
 
                 <p className="text-md text-gray-600 mb-2">
-                    For this year's season, the object of the game is to attain a higher score than the opposing Alliance by Scoring Rings,
+                    For this year&apos;s season, the object of the game is to attain a higher score than the opposing Alliance by Scoring Rings,
                     moving Mobile Goals to Alliance Zones, and by Elevating on Platforms at the end of a Match. 
                 </p>
 
@@ -80,7 +80,7 @@ export default function AboutUs() {
                     followed by a 1m45s Driver Controlled Period.
                 </p>
 
-                <Image src={TippingPointField} placeholder="blur" quality={100} />
+                <Image src={TippingPointField} placeholder="blur" quality={100} alt="Tipping Point field" />
             </div>
         </Layout>
     )

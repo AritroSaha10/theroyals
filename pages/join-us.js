@@ -1,11 +1,8 @@
 import Image from "next/image"
-import Link from 'next/link'
-import { AiOutlineForm } from "react-icons/ai"
 
 import Layout from "../components/Layout"
 
 import Interested from "../public/images/teamspraypaint.jpg"
-import TippingPointField from "../public/images/tipping-point-field.png"
 
 export default function JoinUs() {
     return (
@@ -30,7 +27,7 @@ export default function JoinUs() {
 
             <div className="text-center lg:text-left px-10 pt-6 pb-2 lg:px-20 xl:px-60 lg:pt-12 lg:pb-4">
                 <p className="text-md text-gray-600">
-                    Thank you for expressing interest in joining our club! Here, you'll be
+                    Thank you for expressing interest in joining our club! Here, you&apos;ll be
                     able to find more information about how and where to apply.
                 </p>
             </div>

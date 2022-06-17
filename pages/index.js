@@ -75,7 +75,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-2 text-white mb-4 md:w-3/4 lg:w-1/2">
             <p className="text-xl font-light">
-              We're a <span className="text-red-500 font-medium">VEX Robotics team</span> from
+              We&apos;re a <span className="text-red-500 font-medium">VEX Robotics team</span> from
               {" "}
               <span className="text-emerald-700 font-medium">Mississauga</span>
               , working from our school of {" "}
@@ -99,7 +99,7 @@ export default function Home() {
         <div className="flex-col w-4/5 text-center md:text-left mb-4 md:mb-0">
           <h1 className="text-black font-bold text-2xl xs:text-3xl md:text-4xl">Who We Are</h1>
           <p className="mt-4 w-full md:w-3/4 text-lg text-gray-600">
-            We're the John Fraser Royals, a group of students passionate for robotics, engineering, design, and programming.
+            We&apos;re the John Fraser Royals, a group of students passionate for robotics, engineering, design, and programming.
             We compete in the high school VEX Robotics Competition in Ontario every year, constructing and coding a new robot to
             complete a challenge and compete with other teams across the province. Created in 2017, the club has expanded to include
             several members split between two teams, 82050A and 82050B.

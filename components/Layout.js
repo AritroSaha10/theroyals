@@ -51,7 +51,7 @@ export default function Layout({ name, children }) {
                 <meta property="twitter:description" content="The website representing John Fraser's VEX Team: The Royals 82050." />
                 <meta property="twitter:image:src" content="/images/new-splash-compressed.png" />
 
-                <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+                <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
                 <meta name="google-site-verification" content="NxIS9WMkJ1Bwz7t8rlvApmZgRAJYV9qvjf0sWHdJBLM" />
             </Head>
