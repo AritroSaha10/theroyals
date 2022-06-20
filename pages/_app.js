@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 import analytics from "../util/firebase/analytics"
-import { logEvent, setCurrentScreen } from "firebase/analytics"
+import { logEvent } from "firebase/analytics"
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -13,15 +13,14 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
       // Initialize Firebase Analytics
-      const logEventHandler = (url) => {
-        setCurrentScreen(analytics(), url);
+      const logEventHandler = () => {
         logEvent(analytics(), "screen_view");
       };
 
       router.events.on('routeChangeComplete', logEventHandler);
       logEventHandler(window.location.pathname); // Logs first page that the user visits
 
-      console.log("Made with no ☕️!");
+      console.log("Made with 🧋");
 
       // Remvove the event listener for firebase Analytics after unmount
       return () => {
