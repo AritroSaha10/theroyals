@@ -10,7 +10,7 @@ import getFilesInDirectory from "../../util/getFilesInDirectory"
 import PeopleWorking from "../../public/images/people-working.jpg"
 
 import { motion } from "framer-motion"
-import transition from '../../components/Transitions';
+// import transition from '../../components/Transitions';
 
 export async function getStaticPaths(context) {
     const allMembersRaw = await getFilesInDirectory("team");

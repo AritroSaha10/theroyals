@@ -4,7 +4,6 @@ import Link from 'next/link'
 
 import Showcase from "../public/images/team-photos/tipping-point/everyone.jpg"
 import Interested from "../public/images/teamspraypaint.jpg"
-import HeroVideoPlaceholder from "../public/images/everyone-cropped.jpg"
 
 import { FaHammer, FaCode, FaChessPawn, FaShareAlt } from "react-icons/fa";
 import { useEffect, useRef } from 'react'

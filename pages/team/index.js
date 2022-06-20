@@ -8,12 +8,6 @@ import Layout from "../../components/Layout"
 
 import PeopleWorking from "../../public/images/people-working.jpg"
 
-import ITZ from "../../public/images/timeline/2017-itz.png"
-import TP from "../../public/images/timeline/2018-tp.png"
-import TT from "../../public/images/timeline/2019-tt.png"
-import CU from "../../public/images/timeline/2020-cu-2.png"
-
-import ClubFairBoard from "../../public/images/clubfair-board.png"
 import getFilesInDirectory from "../../util/getFilesInDirectory"
 
 import { motion } from "framer-motion"
