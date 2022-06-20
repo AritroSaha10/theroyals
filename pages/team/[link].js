@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from "next/image";
 import Layout from "../../components/Layout";
 
-import marked from 'marked';
+import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
 
 import getFilesInDirectory from "../../util/getFilesInDirectory"
