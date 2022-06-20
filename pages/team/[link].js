@@ -2,15 +2,17 @@ import Link from 'next/link'
 import Image from "next/image";
 import Layout from "../../components/Layout";
 
+// CMS extraction
 import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
-
 import getFilesInDirectory from "../../util/getFilesInDirectory"
 
-import PeopleWorking from "../../public/images/people-working.jpg"
-
+// Animations
 import { motion } from "framer-motion"
 // import transition from '../../components/Transitions';
+
+// Images
+import PeopleWorking from "../../public/images/people-working.jpg"
 
 export async function getStaticPaths(context) {
     const allMembersRaw = await getFilesInDirectory("team");

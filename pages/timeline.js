@@ -1,14 +1,12 @@
 import Image from "next/image"
-
 import Layout from "../components/Layout"
 
+// Images
 import TimelineImg from "../public/images/vex-timeline.png"
-
 import ITZ from "../public/images/timeline/2017-itz.png"
 import TP from "../public/images/timeline/2018-tp.png"
 import TT from "../public/images/timeline/2019-tt.png"
 import CU from "../public/images/timeline/2020-cu-2.png"
-
 import TiP from "../public/images/team-photos/tipping-point/everyone.jpg"
 
 export default function Timeline() {

@@ -1,14 +1,16 @@
-import Layout from '../components/Layout'
+import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import Layout from '../components/Layout'
+import Navbar from '../components/Navbar'
 
+// Icons
+import { FaHammer, FaCode, FaChessPawn, FaShareAlt } from "react-icons/fa";
+
+// Images
 import Showcase from "../public/images/team-photos/tipping-point/everyone.jpg"
 import Interested from "../public/images/teamspraypaint.jpg"
-
-import { FaHammer, FaCode, FaChessPawn, FaShareAlt } from "react-icons/fa";
-import { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
-import Navbar from '../components/Navbar'
 
 const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 

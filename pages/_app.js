@@ -1,11 +1,12 @@
-import 'tailwindcss/tailwind.css'
-import { AnimateSharedLayout } from "framer-motion"
-
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
 import analytics from "../util/firebase/analytics"
 import { logEvent } from "firebase/analytics"
+
+import { AnimateSharedLayout } from "framer-motion"
+
+import 'tailwindcss/tailwind.css'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

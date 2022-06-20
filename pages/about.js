@@ -1,7 +1,7 @@
 import Image from "next/image"
-
 import Layout from "../components/Layout"
 
+// Images
 import Interested from "../public/images/teamspraypaint.jpg"
 import TippingPointField from "../public/images/tipping-point-field.png"
 

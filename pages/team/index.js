@@ -1,17 +1,18 @@
 import Image from "next/image"
 import Link from 'next/link'
-
-import DOMPurify from "isomorphic-dompurify";
-import { marked } from 'marked';
-
 import Layout from "../../components/Layout"
 
-import PeopleWorking from "../../public/images/people-working.jpg"
-
+// CMS data extraction
+import DOMPurify from "isomorphic-dompurify";
+import { marked } from 'marked';
 import getFilesInDirectory from "../../util/getFilesInDirectory"
 
+// Animations
 import { motion } from "framer-motion"
 import transition from "../../components/Transitions";
+
+// Images
+import PeopleWorking from "../../public/images/people-working.jpg"
 
 const DESCRIPTION_MAX_CHAR = 50;
 
